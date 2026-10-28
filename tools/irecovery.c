@@ -153,7 +153,7 @@ static void print_device_info(irecv_client_t client)
 		printf("CPID: 0x%04x\n", devinfo->cpid);
 		printf("CPRV: 0x%02x\n", devinfo->cprv);
 		printf("BDID: 0x%02x\n", devinfo->bdid);
-		printf("ECID: 0x%016" PRIx64 "\n", devinfo->ecid);
+		printf("ECID: 0x%016" PRIx64 " (%" PRIu64 ")\n", devinfo->ecid, devinfo->ecid);
 		printf("CPFM: 0x%02x\n", devinfo->cpfm);
 		printf("SCEP: 0x%02x\n", devinfo->scep);
 		printf("IBFL: 0x%02x\n", devinfo->ibfl);
